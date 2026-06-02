@@ -1,0 +1,12 @@
+name: Screenshot Notify
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder step
+        run: echo 'Screenshot notification placeholder'
