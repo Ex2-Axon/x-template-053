@@ -1,12 +1,18 @@
 name: Deploy
 
 on:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   push:
     branches: [ main ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true' ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
